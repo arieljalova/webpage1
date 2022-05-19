@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color:red;
+            }
+            .smallheading {
+                color: navy;
+            }
+            #kitty{
+
+                border-color: cornflowerblue;
+                border-style: solid;
+                border-width: 4px;
+                border-radius: 2%;
+            }
+        </style>
+
+        <script>
+            var x = "noScript"
+            var isReady = false
+            console.log(isReady)
+            if (x == "Script"){
+                console.log("they are equal")
+            }
+            else {
+                console.log("they are not equal")
+            }
+
+            grade = 79
+
+            if(grade>=90)
+            {
+                console.log("A")
+            } 
+            else if(grade>=80)
+            {
+                console.log("B")
+            }
+            else if(grade>=70)
+            {
+                console.log("C")
+            }
+            else 
+            {
+                console.log("Run Away")
+            }
+
+            switch(x)
+            {
+                case "Script":
+                    console.log("they were equal")
+                    break
+                default:
+                    console.log("this is like and else")
+            }
+            
+
+            grade1 = 65
+            grade2 = 80
+            grade3 = 90
+
+            function letterGrade(grade)
+            {
+                if(grade>=90){
+                    return "A"
+                } 
+                else if(grade>=80){
+                    return "B"
+                }
+                else if(grade>=70){
+                    return "C"
+                }
+                else{
+                    return "RUN AWAY!!!"
+                }
+
+            }
+
+            console.log(letterGrade(grade1))
+            console.log(letterGrade(grade2))
+            console.log(letterGrade(grade3))
+
+
+            grades=[78,79,99,43,50]
+
+            function multipleGrades(grades)
+            {
+                for (let i=0; i<grades.length; i++)
+                {
+                    console.log(letterGrade(grades[i]))
+                }
+            }
+
+            multipleGrades(grades)
+
+
+        </script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+        
+    <body>
+        <h1>Big Heading</h1>
+        <h6 class="smallheading">A Very Small Heading</h6>
+
+        <a href="https://google.com">Goto Google</a>"
+        <img id="kitty" src="https://placekitten.com/200/200" alt="">
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a nunc ut ante bibendum dictum. Aliquam ullamcorper lectus nunc, id eleifend ex dapibus vitae. Nam vestibulum dapibus convallis. In hac habitasse platea dictumst. Pellentesque vulputate venenatis varius. Praesent blandit accumsan odio, at viverra erat. Proin lobortis, ex sed venenatis consectetur, enim dui euismod turpis, in molestie sapien augue et nibh. Quisque molestie, lacus non condimentum laoreet, lectus nunc consequat ipsum, lobortis lacinia metus magna a tellus. Quisque mollis dictum venenatis. Duis molestie urna et ante varius pretium. Pellentesque dictum viverra sapien, in porta lacus volutpat at. Nam eu commodo orci, sed dignissim diam. Suspendisse vestibulum, ligula non dignissim ultricies, est nibh accumsan arcu, sit amet ornare odio leo non nulla.</p>
+        <div>This is a div</div>
+        <span>this is span</span>
+    </body>
+    
+</html>
